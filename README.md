@@ -7,13 +7,13 @@ Adaptive Check-in App for Academic Burnout in Graduate Students at Georgetown Un
 
 ---
 
-## 🔍 Project Overview
+## Project Overview
 
 **HoyaMind** is a speculative mobile app prototype designed to assess academic burnout among graduate students at Georgetown University. Built using adaptive measurement principles and AI-generated test items, the app offers a quick, personalized check-in experience and connects students with wellness resources based on their estimated burnout level.
 
 ---
 
-## 📱 Key Features
+## Key Features
 
 - **Computerized Adaptive Testing (CAT):**  
   Efficiently estimates burnout level with 5–10 true/false items using IRT-based adaptive testing logic.
@@ -32,28 +32,28 @@ Adaptive Check-in App for Academic Burnout in Graduate Students at Georgetown Un
 
 ---
 
-## 🧠 Methodology
+## Methodology
 
-### ✅ Item Generation
+### Item Generation
 - Generated using ChatGPT with refined prompt engineering.
 - Items controlled for difficulty and aligned with burnout symptoms.
 
-### ✅ Reliability Testing
+### Reliability Testing
 - Cronbach’s Alpha = **0.94** (high internal consistency).
 - Reliability analysis done in R.
 
-### ✅ Item Calibration
+### Item Calibration
 - 2-Parameter Logistic (2PL) IRT model used.
 - `mirt` R package applied to estimate item discrimination (a) and difficulty (b).
 - Discrimination values: **1.9–3.3**
 - Difficulty values: **-0.9–1.1**
 
-### ✅ CAT Algorithm
+### CAT Algorithm
 - First item targeted at θ = 0.
 - Next item selected to maximize information based on updated θ estimate.
 - Uses Maximum Likelihood Estimation (MLE) for ability estimation.
 
-### ✅ Stopping Rules
+### Stopping Rules
 - Minimum: 5 questions  
 - Maximum: 10 questions  
 - Stop early if SE ≤ 0.1  
@@ -61,7 +61,7 @@ Adaptive Check-in App for Academic Burnout in Graduate Students at Georgetown Un
 
 ---
 
-## 🎯 Burnout Levels
+## Burnout Levels
 
 | Burnout Tier | Theta Range      | Example Resources                                                  |
 |--------------|------------------|---------------------------------------------------------------------|
@@ -71,7 +71,7 @@ Adaptive Check-in App for Academic Burnout in Graduate Students at Georgetown Un
 
 ---
 
-## 📊 UI and Visualizations
+## UI and Visualizations
 
 - **Item Characteristic Curve (ICC)**  
 - **Item Information Curve (IIC)**  
@@ -81,7 +81,7 @@ All visualizations rendered dynamically as part of the CAT workflow.
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 - **Not Clinically Validated:** Items should be co-developed with psychologists for real deployment.
 - **Simulated Data:** CAT algorithm and IRT model tested using synthetic student data.
@@ -89,7 +89,7 @@ All visualizations rendered dynamically as part of the CAT workflow.
 
 ---
 
-## 💡 Future Work
+## Future Work
 
 - Pilot with real users and collect empirical response data.
 - Integrate natural language input with adaptive item branching.
@@ -97,7 +97,7 @@ All visualizations rendered dynamically as part of the CAT workflow.
 
 ---
 
-## 📚 References
+## References
 
 Key references include:
 - OpenAI (2025), ChatGPT LLM
@@ -107,9 +107,4 @@ Key references include:
 - UCLA Institute for Digital Research (n.d.), Cronbach's Alpha
 - SenthilKumar et al. (2023), *AJP Heart and Circulatory Physiology*
 
-Full references available in the [report](./Final_Project_Report.pdf) 📄
-
----
-
-## 📁 Project Structure
 
