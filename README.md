@@ -96,6 +96,9 @@ All visualizations rendered dynamically as part of the CAT workflow.
 - Expand item pool to include multidimensional burnout traits (e.g., emotional, physical).
 
 ---
+## Try the HoyaMind Burnout Assessment App
+[Click here](https://jmuraofranci.shinyapps.io/01BurnoutAssessment/)
+
 
 ## References
 
